@@ -30,12 +30,12 @@ var SingleQuestion = React.createClass({
 					</a>
 					<div className="question-info">
 						<div className="submission-info">
-							<p className="question-submitted-by">submitted by:{this.props.question.attributes.submittedBy}</p>
-							<p className="question-submitted-on">on:{this.props.question.attributes.createdAt}</p>
+							<p className="question-submitted-by">submitted by: {this.props.question.attributes.submittedBy}</p>
+							<p className="question-submitted-on">on: {this.props.question.attributes.createdAt}</p>
 						</div>
 						<div className="delete-the-question">
-							<p>click here to delete ---></p>
-							<p className="deleteX" onClick={this.removeQuestion}> X </p>
+							
+							<button className="deleteX" onClick={this.removeQuestion}>delete question</button>
 						</div>
 					</div>
 			</li>

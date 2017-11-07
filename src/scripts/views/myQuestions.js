@@ -4,6 +4,7 @@ import STORE from '../store.js'
 
 import QuestionList from './components/questionList'
 import Banner from './components/banner'
+import Footer from './components/footer'
 
 const MyQuestions = React.createClass({
 	componentWillMount: function() {
@@ -21,7 +22,9 @@ const MyQuestions = React.createClass({
 		return (
 			<div className="my-questions">
 				<Banner />
-				<QuestionList questionCollection={this.state.questColl} />	
+				<h1 id="my-question-list">my questions</h1>
+				<QuestionList questionCollection={this.state.questColl} />
+				<Footer />	
 			</div>
 		)
 	}

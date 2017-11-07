@@ -1,8 +1,14 @@
 * {
 	font-family: Helvetica, Arial, sans-serif;
 	box-sizing: border-box;
-	// border: 1px solid fuchsia;
+	// border: 1px solid mediumorchid;
 }
+
+.container{
+	height: 100%;
+}
+
+
 body {
 	margin: 0;
 }
@@ -12,6 +18,7 @@ body {
 	background-size: 100% 100%;
 	height: 500px;
 	position: relative;
+	padding-top: 7%;
 }
 
 .banner h1 {
@@ -22,6 +29,7 @@ body {
 	margin: 0 auto;
 	font-family: 'Lato';
 	font-size: 50px;
+	// margin-top: 7%;
 }
 
 .banner ul {
@@ -34,7 +42,7 @@ body {
 
 .banner li {
 	display: inline-block;
-	width:25%
+	width: 25%;
 }
 
 .banner a {
@@ -48,7 +56,7 @@ body {
 	text-align: center;
 	margin: 0 auto;
 	font-family: 'Lato';
-	font-size: 40px;
+	// font-size: 40px;
 }
 
 
@@ -60,6 +68,7 @@ body {
 	margin: 0 auto;
 	font-family: 'Lato';
 	font-size: 40px;
+	margin-top: 2%;
 
 
 }
@@ -201,7 +210,7 @@ body {
 	margin-left: 21%;
 }
 
-.question-ul{
+.question-ul {
 	list-style-type: none;
 }
 
@@ -213,17 +222,51 @@ body {
 
 }
 
-.single-question{
+.single-question {
 	display: inline-block;
 	padding: 10px;
 }
 
-.deleteX{
-	color: red;
-	padding: 4px;
-	cursor: pointer;
-
+.question-submitted-by {
+	margin: 5%;
 }
+
+.question-submitted-on {
+	margin: 5%;
+}
+
+.delete-the-question {
+	text-align: center;
+}
+
+.deleteX {
+	padding: 1%;
+	background-color: orangered;
+	font-family: 'Nunito';
+	border-radius: 15%;
+	color: white;
+	font-size: 15px;
+	margin-left: 35%;
+	cursor: pointer;
+}
+
+.my-questions h1 {
+	text-align: center;
+	font-family: 'Lato';
+	
+}
+
+#my-question-list {
+	text-align: center;
+	font-family: 'Nunito';
+ 	font-size: 30px;
+ }
+
+ #submit-question {
+ 	text-align: center;
+	font-family: 'Nunito';
+ 	font-size: 30px;
+ }	
 
 a:visited{
 	color: white;
@@ -235,13 +278,130 @@ a:visited{
 
 .single-question-li p {
 	display: inline-block;
-	
+	font-family: 'Nunito';
+	font-size: 20px;
+}
+
+.single-question-li a:link {
+	color: black;
+}
+
+.theP {
+	text-align: center;
+	font-family: 'Nunito';
+	font-size: 30px;
 }
 
 .submission-info, .delete-the-question {
 	width: 50%;
 	display: inline-block;
 }
+
+.answer-list {
+	// border: 3px solid blueviolet;
+}
+
+.answer-ul {
+	// border: 3px solid deeppink;
+}
+
+.single-answer {
+	border: 1px solid black;
+	list-style-type: decimal;
+	padding: 1%;
+	width: 80%;
+	margin: 0 auto;
+	list-style-position: inside;
+	font-family: 'Nunito';
+	font-size: 20px;
+}
+
+.answer-form {
+	width: 80%;
+	border: 1px solid black;
+	padding: 1%;
+	margin: 0 auto;
+}
+.the-question p {
+	text-align: center;
+	font-family: 'Nunito';
+	font-size: 30px;
+}
+
+.answer-form input {
+	width: 35%;
+	font-size: 20px;
+}
+
+.answer-form p {
+	font-family: 'Nunito';
+}
+
+.correct-button {
+	padding: 1%;
+	background-color: navy;
+	font-family: 'Nunito';
+	border-radius: 15%;
+	color: white;
+	font-size: 15px;
+	cursor: pointer;
+
+}
+
+.recall-answer {
+	padding: 1%;
+	background-color: orangered;
+	font-family: 'Nunito';
+	border-radius: 15%;
+	color: white;
+	font-size: 15px;
+	margin-left: 35%;
+	cursor: pointer;
+}
+
+.submit-question-form {
+	width: 80%;
+	border: 1px solid black;
+	padding: 1%;
+	margin: 0 auto;
+}
+
+.submit-question-form button {
+	padding: 1%;
+	background-color: orangered;
+	font-family: 'Nunito';
+	border-radius: 15%;
+	color: white;
+	font-size: 15px;
+	margin-left: 35%;
+	cursor: pointer;
+}
+
+.submit-question-form p {
+	font-family: 'Nunito';
+	font-size: 30px;
+	width: 50%;
+}
+
+.submit-question-form input {
+	width: 95%;
+	font-family: 'Nunito';
+	font-size: 30px;
+}
+
+#yeahr {
+	width: 60%;
+}
+
+.footer {
+	background-color: black;
+	margin-bottom: 0px;
+	display: none;
+}
+
+
+
+
 
 
 

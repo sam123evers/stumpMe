@@ -1,6 +1,7 @@
 import React from 'react'
 import User from '../models/userModel'
 import Banner from './components/banner'
+import Footer from './components/footer'
 
 import ACTIONS from '../actions'
 import STORE from '../store'
@@ -29,6 +30,7 @@ const AnswerPage = React.createClass({
 				<Banner />
 				<p className="theP">click a question to submit an answer</p>
 				<QuestionList questionCollection={this.state.questColl} />
+				<Footer />
 			</div>
 		)
 	}

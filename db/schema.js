@@ -31,7 +31,8 @@ const answerSchema = new mongoose.Schema({
   questionID: { type: String, required: true },
   theAnswer: { type: String, required: true },
   isCorrect: { type: Boolean,  default: false },
-  submitterID: {type: String, required: true }
+  submitterID: { type: String, required: true },
+  difficulty: { type: Number, required: true }
 })
 
 module.exports = {

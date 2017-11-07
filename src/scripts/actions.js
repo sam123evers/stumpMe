@@ -80,6 +80,12 @@ var ACTIONS = {
 			
 	},
 
+	deleteAnswer: function(answer) {
+		answer.destroy().then(() => {
+			this.fetchAnswersByQuestionID()
+		})
+	},
+
 	fetchAllQuestions: function() {
 		var questionsColl = STORE.get('questColl')
 			questionsColl.fetch()

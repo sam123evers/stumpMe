@@ -1,6 +1,7 @@
 import React from 'react'
 import User from '../models/userModel'
 import Banner from './components/banner'
+import Footer from './components/footer'
 import ACTIONS from '../actions'
 
 
@@ -10,7 +11,9 @@ const QuestionSubmitView = React.createClass({
 		return(
 			<div>
 				<Banner />
+				<h1 id="submit-question">submit a trivia question in the field below:</h1>
 				<SubmitQuestionForm />
+				<Footer />
 			</div>
 		)
 	}
@@ -29,15 +32,16 @@ const SubmitQuestionForm = React.createClass({
 		ACTIONS.addQuestion(questionData)
 		console.log(questionData)
 		formEl.question.value = ""
+		location.hash = "/my_questions"
 		
 	},
 
 	render: function() {
 		return(
-			<div>
+			<div className="submit-question-form">
 				<form onSubmit={this._submitQuestion}>
-					<p>submit question in the field below</p>
-					<p><input name="question" type="text" placeholder="enter question here..." />?</p>
+			
+					<p id="yeahr"><input name="question" type="text" placeholder="enter question here..." />?</p>
 
 					<button type="submit">submit question</button>
 				</form>
